@@ -2,27 +2,27 @@
 
 ## Overview
 This project analyses customer spending behaviour for a fictional retail 
-company called Smart Fresh Retail. Using R, I cleaned the dataset, ran 
-statistical tests, applied factor analysis, and segmented customers into 
-distinct groups to support better marketing decisions.
+company called Smart Fresh Retail. Using R, the dataset was cleaned, 
+statistical tests were run, factor analysis was applied, and customers 
+were segmented into distinct groups to support better marketing decisions.
 
 ---
 
-## What I Did
+## What Was Done
 
 ### 1. Data Cleaning
-I removed customers born before 1950 as they have different spending 
-patterns that could skew the analysis. I also created a new Age column 
-for easier grouping. The dataset had only 23 missing values, so I used 
-mean imputation rather than deletion to preserve as many records as 
-possible. I also removed records where the last customer interaction 
-was over 60 days ago and luxury spending was under £10, to keep the 
+Customers born before 1950 were removed as they have different spending 
+patterns that could skew the analysis. A new Age column was also created 
+for easier grouping. The dataset had only 23 missing values, so mean 
+imputation was used rather than deletion to preserve as many records as 
+possible. Records where the last customer interaction was over 60 days 
+ago and luxury spending was under £10 were also removed, to keep the 
 analysis focused on active buyers.
 
 ---
 
 ### 2. Descriptive Statistics
-I focused on four key variables:
+Four key variables were analysed:
 
 - **Annual Income** — right-skewed, showing income differences across customers
 - **Spend on Luxury Goods** — skewed with a median of 28 vs mean of 48.4, 
@@ -35,7 +35,7 @@ I focused on four key variables:
 ---
 
 ### 3. T-Tests (Hypothesis Testing)
-I ran three t-tests to investigate key business questions:
+Three t-tests were run to investigate key business questions:
 
 **I. Do older customers shop in-store more than younger ones?**  
 Yes — statistically significant (p = 0.0005663). Older customers average 
@@ -68,7 +68,7 @@ Key findings from the correlation analysis:
 ---
 
 ### 5. PCA (Principal Component Analysis)
-I selected 5 principal components, which together explain the most 
+Five principal components were selected, which together explain the most 
 useful variance in the dataset:
 
 - **PC1** — overall purchasing behaviour (meat, wine, luxury, store visits)
@@ -81,7 +81,7 @@ useful variance in the dataset:
 ---
 
 ### 6. Customer Clustering (K-Means)
-Using the elbow method, I identified 4 optimal customer clusters:
+Using the elbow method, 4 optimal customer clusters were identified:
 
 | Cluster | Profile | Key Behaviour |
 |---|---|---|
